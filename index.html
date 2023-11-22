@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-stone-300">
+    <main id="app">
+      <div class="max-[500px] mx-auto">
+        <h1 id="header" class="p-6 font-serif text-cyan-700 text-4xl">
+          Contact apps
+        </h1>
+
+        <form id="createContactForm">
+          <div class="flex gap-3 mx-[40px]">
+            <input
+              name="name"
+              placeholder="Contact Name"
+              type="text"
+              class="border px-3 outline-none h-10 disabled:opacity-25 border-slate-500"
+              required
+            />
+            <input
+              name="number"
+              placeholder="Phone Number"
+              type="text"
+              class="border px-3 outline-none disabled:opacity-25  h-10 border-slate-500"
+              required
+            />
+            <button class="h-10 bg-gray-500 disabled:opacity-25  hover:text-white text-amber-900 whitespace-nowrap px-4 py-2">
+              Add Content
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
